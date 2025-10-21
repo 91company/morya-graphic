@@ -3,20 +3,21 @@ body {
   padding: 0;
   font-family: 'Arial', sans-serif;
   color: #FFD700; /* Gold text */
+  background-color: #111; /* Dark background for designer look */
 }
 
-/* Hero section with background image */
+/* HERO SECTION */
 .hero {
   position: relative;
   background: url('hero.jpg') no-repeat center center/cover;
-  height: 400px;
+  height: 450px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 .hero .overlay {
-  background-color: rgba(0,0,0,0.6); /* Dark overlay */
+  background-color: rgba(0,0,0,0.6);
   width: 100%;
   height: 100%;
   display: flex;
@@ -39,6 +40,15 @@ body {
   color: #FFD700;
 }
 
+/* MOTTO */
+.motto {
+  text-align: center;
+  margin: 30px 0;
+  font-style: italic;
+  font-size: 1.5em;
+}
+
+/* SERVICES */
 .services {
   padding: 40px 20px;
   max-width: 700px;
@@ -48,6 +58,7 @@ body {
 .services h2 {
   font-size: 2em;
   margin-bottom: 20px;
+  text-align: center;
 }
 
 .services ol {
@@ -56,6 +67,32 @@ body {
   padding-left: 20px;
 }
 
+/* PORTFOLIO */
+.portfolio {
+  padding: 40px 20px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.portfolio h2 {
+  font-size: 2em;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.portfolio-item img {
+  width: 100%;
+  border: 2px solid #FFD700;
+  border-radius: 8px;
+}
+
+/* CONTACT */
 .contact {
   padding: 40px 20px;
   text-align: center;
@@ -73,7 +110,7 @@ body {
   font-weight: bold;
   border-radius: 8px;
   color: #000;
-  background-color: #FFD700; /* Gold button */
+  background-color: #FFD700;
   transition: 0.3s;
 }
 
@@ -88,13 +125,15 @@ body {
   color: #FFD700;
 }
 
-/* Responsive for mobile */
+/* RESPONSIVE */
 @media (max-width: 768px) {
   .headline {
     font-size: 2.5em;
   }
-
   .subheadline {
+    font-size: 1.2em;
+  }
+  .motto {
     font-size: 1.2em;
   }
 }
