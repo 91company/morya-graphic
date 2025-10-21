@@ -1,9 +1,9 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: 'Arial', sans-serif;
-  color: #FFD700; /* Gold text */
-  background-color: #111; /* Dark background for designer look */
+  font-family: 'Montserrat', sans-serif;
+  color: #FFD700;
+  background-color: #111;
 }
 
 /* HERO SECTION */
@@ -32,6 +32,7 @@ body {
   font-size: 4em;
   font-weight: bold;
   margin: 0;
+  font-family: 'Playfair Display', serif;
 }
 
 .subheadline {
@@ -50,52 +51,52 @@ body {
 
 /* SERVICES */
 .services {
-  padding: 40px 20px;
-  max-width: 700px;
+  padding: 50px 20px;
+  max-width: 900px;
   margin: auto;
+  background-color: #1c1c1c;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+  color: #FFD700;
 }
 
 .services h2 {
-  font-size: 2em;
-  margin-bottom: 20px;
+  font-size: 2.5em;
   text-align: center;
+  margin-bottom: 30px;
+  font-family: 'Playfair Display', serif;
 }
 
 .services ol {
-  font-size: 1.2em;
-  line-height: 1.8;
-  padding-left: 20px;
+  font-size: 1.3em;
+  line-height: 2;
+  padding-left: 30px;
 }
 
-/* PORTFOLIO */
-.portfolio {
-  padding: 40px 20px;
-  max-width: 1000px;
-  margin: auto;
-}
-
-.portfolio h2 {
-  font-size: 2em;
-  text-align: center;
-  margin-bottom: 20px;
-}
-
-.grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 20px;
-}
-
-.portfolio-item img {
-  width: 100%;
-  border: 2px solid #FFD700;
+.services ol li {
+  margin: 12px 0;
+  padding: 10px 15px;
+  background-color: #222;
+  border-left: 4px solid #FFD700;
   border-radius: 8px;
+  transition: 0.3s;
+}
+
+.services ol li:hover {
+  background-color: #333;
+  transform: scale(1.02);
 }
 
 /* CONTACT */
 .contact {
-  padding: 40px 20px;
+  padding: 50px 20px;
   text-align: center;
+}
+
+.contact h2 {
+  font-size: 2.5em;
+  font-family: 'Playfair Display', serif;
+  margin-bottom: 20px;
 }
 
 .buttons {
@@ -135,5 +136,11 @@ body {
   }
   .motto {
     font-size: 1.2em;
+  }
+  .services h2 {
+    font-size: 2em;
+  }
+  .contact h2 {
+    font-size: 2em;
   }
 }
